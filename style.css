@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: hidden;
+}
+
+audio {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+body {
+    background-color: black;
+}
+
+.wrapper {
+    padding-top: 2em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.wrapper img {
+    padding-top: 1em;
+    width: 20%;
+    min-width: 12em;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.reveal {
+    opacity: 1 !important;
+}
